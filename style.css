@@ -1,0 +1,133 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {  
+    height: 100vh;
+    font-family: 'Dosis', sans-serif;
+}
+
+.interface {
+    display: flex;
+    height: 100%;
+}
+
+.time-buttons,
+.controller,
+.weather {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+}
+
+.time {
+    width: 150px;
+    height: 50px;
+    margin: 30px;
+    font-family: inherit;
+    font-size: 20px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #fff;
+    background-color: rgba(51, 51, 51, .5);
+    border: none;
+    border-radius: 10px;
+    outline: none;
+    cursor: pointer;
+}
+
+.time:hover, .time:active,
+.rain:hover, .rain:active,
+.beach:hover, .beach:active {
+    box-shadow: 0 0 5px 5px #333;
+    transform: scale(1.2);
+    transition: all 0.7s;
+}
+
+.controller {
+    position: relative;
+}
+
+.track-outline,
+.moving-outline {
+    width: 300px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(-90deg);
+    pointer-events: none;
+}
+
+.play,
+.replay {
+    background: none;
+    background-position: center;
+    background-repeat: no-repeat;
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
+
+.play {
+    width: 150px;
+    height: 150px;
+    background-image: url(./img/play.svg);
+}
+
+.replay {
+    width: 30px;
+    height: 30px;
+    background-image: url(./img/replay.svg);
+}
+
+.timer {
+    position: absolute;
+    bottom: 15%;
+    font-size: 90px;
+    font-weight: 200;
+    color: #fff;
+}
+
+.rain,
+.beach {
+    width: 150px;
+    height: 150px;
+    margin: 40px;
+    background-color: rgba(51, 51, 51, .5);
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 150px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
+
+.rain {
+    background-image: url(./img/rain.svg);
+}
+
+.beach {
+    background-image: url(./img/beach.svg);
+}
+
+.background {
+    position: relative;
+}
+
+.video_rain {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+@media screen and (max-width: 768px) {
+    .interface {
+        display: flex;
+        flex-direction: column;
+    }
+}

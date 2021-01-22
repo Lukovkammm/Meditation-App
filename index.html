@@ -5,37 +5,31 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Meditation App</title>
-    <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@200;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
     <div class="background">
-        <video class="video_rain" loop src="./video/rain.mp4"></video>
+        <video class="video_rain" loop src="./video/Rain - 17013.mp4"></video>
     </div>
     <div class="interface">
-        <div class="time-buttons">
-            <button class="time" data-time="120">2 minutes</button>
-            <button class="time" data-time="300">5 minutes</button>
-            <button class="time" data-time="600">10 minutes</button>
-        </div>
+        <div class="time-buttons"></div>
         <div class="controller">
             <audio class="song" src="./sounds/rain.mp3"></audio>
-            <svg class="track-outline" width="453" height="453" viewBox="0 0 453 453" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <circle cx="226.5" cy="226.5" r="216.5" stroke="white" stroke-width="20"/>
-                </svg>
-              <svg class="moving-outline" width="453" height="453" viewBox="0 0 453 453" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <circle cx="226.5" cy="226.5" r="216.5" stroke="#018EBA" stroke-width="20"/>
-                </svg>
+            <svg class="track-outline" width="453" height="453" viewBox="0 0 453 453" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <circle cx="226.5" cy="226.5" r="216.5" stroke="white" stroke-width="20" />
+            </svg>
+            <svg class="moving-outline" width="453" height="453" viewBox="0 0 453 453" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <circle cx="226.5" cy="226.5" r="216.5" stroke="#018EBA" stroke-width="20" />
+            </svg>
             <button class="play"></button>
             <button class="replay"></button>
             <span class="timer">00:00</span>
         </div>
-        <div class="weather">
-            <button class="rain" data-sound="./sounds/rain.mp3" data-video="./video/rain.mp4" ></button>
-            <button class="beach" data-sound="./sounds/beach.mp3" data-video="./video/beach.mp4"></button>
-        </div>
+        <div class="weather-buttons"></div>
     </div>
 </body>
 <script src="./script.js"></script>

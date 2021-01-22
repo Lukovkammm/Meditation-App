@@ -16,7 +16,7 @@ body {
 
 .time-buttons,
 .controller,
-.weather {
+.weather-buttons {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -141,7 +141,7 @@ body {
         height: 40px;
     }
 
-    .weather {
+    .weather-buttons {
         display: flex;
         flex-direction: row;
         align-items: flex-end;
